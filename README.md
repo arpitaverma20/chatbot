@@ -1,13 +1,6 @@
 # chatbot
 A FastAPI-based chatbot platform with Google Gemini AI integration, built to support multiple users, authentication, and chat history storage.
 
-# Non-Functional Requirements
-Scalability → Built with FastAPI (async, non-blocking I/O), supports multiple users and concurrent requests.
-Security → Implements JWT authentication, bcrypt password hashing, environment-based secrets.
-Extensibility → Modular code structure (auth, database, chat logic), can be extended with analytics, dashboards, or additional AI models.
-Performance → Low-latency responses via Uvicorn ASGI server and in-memory caching of chat sessions.
-Reliability → Graceful error handling with FastAPI exceptions, persistence of chat history in SQL database.
-
 
 # Features
 👤 User signup & login with JWT authentication
