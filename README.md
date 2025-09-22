@@ -1,7 +1,7 @@
 # chatbot
 A FastAPI-based chatbot platform with Google Gemini AI integration, built to support multiple users, authentication, and chat history storage.
 
-**Non-Functional Requirements**
+# Non-Functional Requirements
 Scalability → Built with FastAPI (async, non-blocking I/O), supports multiple users and concurrent requests.
 Security → Implements JWT authentication, bcrypt password hashing, environment-based secrets.
 Extensibility → Modular code structure (auth, database, chat logic), can be extended with analytics, dashboards, or additional AI models.
@@ -9,7 +9,7 @@ Performance → Low-latency responses via Uvicorn ASGI server and in-memory cach
 Reliability → Graceful error handling with FastAPI exceptions, persistence of chat history in SQL database.
 
 
-**🚀 Features**
+# Features
 👤 User signup & login with JWT authentication
 🔐 Secure password storage with bcrypt
 🤖 AI chatbot powered by Google Gemini (gemini-1.5-flash)
@@ -18,7 +18,7 @@ Reliability → Graceful error handling with FastAPI exceptions, persistence of 
 📜 REST API for chat + history retrieval
 
 
-**🛠 Tech Stack**
+# Tech Stack
 Backend: FastAPI (Python 3.10+), Uvicorn
 Database: SQLAlchemy ORM (SQLite / PostgreSQL)
 Auth: JWT (python-jose), Passlib (bcrypt)
@@ -26,7 +26,7 @@ AI: Google Generative AI SDK
 Frontend: Jinja2 templates
 
 
-📦 **Setup & Run**
+# Setup & Run
 1️⃣ Clone Repository
 git clone https://github.com/yourusername/chatbot-platform.git
 cd chatbot-platform
@@ -44,17 +44,16 @@ SECRET_KEY=your-secret-key
 ALGORITHM=HS256
 ACCESS_TOKEN_EXPIRE_MINUTES=30
 
-# Google Generative AI Key
+**Google Generative AI Key**
 GEMINI_API_KEY=your-api-key
 
-# Database URL
+**Database URL**
 DATABASE_URL=sqlite:///./chatbot.db
-
 
 4️⃣ Run the App
 uvicorn main:app --reload --host 0.0.0.0 --port 8000
 
-**Open in browser:**
+# Open in browser:
 
 UI → http://localhost:8000
 
